@@ -10,7 +10,7 @@ steps:
     publishWebProjects: true
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: 'dotNetConnection'
+    azureSubscription: 'dotNetService'
     appType: 'webAppLinux'
     appName: 'dotNetWebApp151'
     package: '$(System.DefaultWorkingDirectory)/**/*.zip'
